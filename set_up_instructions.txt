@@ -1,0 +1,17 @@
+# Setup Instructions for Databricks
+# 1. Upload the CSV files to the Databricks workspace.
+# 2. Ensure that the Spark cluster is running.
+# 3. Execute this script in a Databricks notebook.
+# 4. Validate that tables are created in Delta format.
+# 5. Run the SQL queries to verify the output.
+
+
+# Setup Instructions for Jupyter Notebook:
+# 1. Install required dependencies:
+#    !pip install pyspark delta-spark
+# 2. Start a Spark session in Jupyter Notebook:
+#    from pyspark.sql import SparkSession
+#    spark = SparkSession.builder.appName("pursuit_Pipeline").getOrCreate()
+# 3. Ensure input CSV files are stored in /mnt/data/ or in local
+# 4. Run the notebook sequentially to load, clean, and store the data in Delta format.
+# 5. Query the Delta tables using SQL for further analysis.
